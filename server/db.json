@@ -368,5 +368,63 @@
       "completion_status": "CP",
       "id": 5
     }
+  ],
+  "appointments": [
+    {
+      "doctor": "2",
+      "patient": "14",
+      "office": "1",
+      "exam_room": "103",
+      "scheduled_time": "2025-10-04 19:45",
+      "id": 1
+    },
+    {
+      "doctor": "3",
+      "patient": "5",
+      "office": "1",
+      "exam_room": "102",
+      "scheduled_time": "2025-10-02 17:18",
+      "id": 2
+    },
+    {
+      "doctor": "6",
+      "patient": "17",
+      "office": "4",
+      "exam_room": "103",
+      "scheduled_time": "2025-10-06 00:46",
+      "id": 3
+    },
+    {
+      "doctor": "4",
+      "patient": "11",
+      "office": "5",
+      "exam_room": "104",
+      "scheduled_time": "2025-09-29 09:50",
+      "id": 4
+    },
+    {
+      "doctor": "10",
+      "patient": "8",
+      "office": "2",
+      "exam_room": "105",
+      "scheduled_time": "2025-09-30 14:03",
+      "id": 5
+    },
+    {
+      "doctor": "9",
+      "patient": "15",
+      "office": "5",
+      "exam_room": "102",
+      "scheduled_time": "2025-10-05 02:27",
+      "id": 6
+    },
+    {
+      "doctor": "6",
+      "patient": "18",
+      "office": "3",
+      "exam_room": "104",
+      "scheduled_time": "2025-10-01 10:51",
+      "id": 7
+    }
   ]
 }
