@@ -508,5 +508,87 @@
       "duration": "30",
       "id": 10
     }
+  ],
+  "appointment_templates": [
+    {
+      "doctor": "10",
+      "office": "5",
+      "profile": "3",
+      "exam_room": "103",
+      "scheduled_time": "2025-09-24 01:28",
+      "id": 1
+    },
+    {
+      "doctor": "7",
+      "office": "5",
+      "profile": "2",
+      "exam_room": "103",
+      "scheduled_time": "2025-09-30 01:28",
+      "id": 2
+    },
+    {
+      "doctor": "4",
+      "office": "3",
+      "profile": "1",
+      "exam_room": "103",
+      "scheduled_time": "2025-09-21 05:37",
+      "id": 3
+    },
+    {
+      "doctor": "2",
+      "office": "3",
+      "profile": "4",
+      "exam_room": "105",
+      "scheduled_time": "2025-09-21 03:14",
+      "id": 4
+    },
+    {
+      "doctor": "9",
+      "office": "4",
+      "profile": "4",
+      "exam_room": "101",
+      "scheduled_time": "2025-10-01 13:14",
+      "id": 5
+    },
+    {
+      "doctor": "3",
+      "office": "5",
+      "profile": "2",
+      "exam_room": "105",
+      "scheduled_time": "2025-09-30 21:59",
+      "id": 6
+    },
+    {
+      "doctor": "5",
+      "office": "2",
+      "profile": "4",
+      "exam_room": "104",
+      "scheduled_time": "2025-09-17 16:20",
+      "id": 7
+    },
+    {
+      "doctor": "1",
+      "office": "3",
+      "profile": "3",
+      "exam_room": "103",
+      "scheduled_time": "2025-09-28 00:30",
+      "id": 8
+    },
+    {
+      "doctor": "8",
+      "office": "4",
+      "profile": "3",
+      "exam_room": "105",
+      "scheduled_time": "2025-09-18 09:53",
+      "id": 9
+    },
+    {
+      "doctor": "6",
+      "office": "2",
+      "profile": "3",
+      "exam_room": "105",
+      "scheduled_time": "2025-09-28 15:41",
+      "id": 10
+    }
   ]
 }
