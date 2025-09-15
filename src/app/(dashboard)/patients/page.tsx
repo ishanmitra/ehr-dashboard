@@ -1,9 +1,73 @@
-import React from 'react'
+"use client";
 
-const page = () => {
+import { useState, useEffect } from "react";
+import axiosClient from "@/lib/axiosClient";
+import PatientTable from "./components/PatientTable";
+import PatientDetail from "./components/PatientDetail";
+import PatientModal from "./components/PatientModal";
+import { Button } from "@/components/ui/button";
+
+export default function PatientsPage() {
+  const [patients, setPatients] = useState([]);
+  const [selectedPatient, setSelectedPatient] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const fetchPatients = async () => {
+    const res = await axiosClient.get("/api/patients");
+    setPatients(res.data);
+  };
+
+  useEffect(() => {
+    fetchPatients();
+  }, []);
+
+  const handleDelete = async (id: number) => {
+    await axiosClient.delete(`/api/patients/${id}`);
+    setSelectedPatient(null);
+    fetchPatients();
+  };
+
+  const handleUpdate = async (id: number, updatedData: any) => {
+    await axiosClient.put(`/api/patients/${id}`, updatedData);
+    fetchPatients();
+  };
+
+  const handleAdd = async (newPatientData: any) => {
+    await axiosClient.post("/api/patients", newPatientData);
+    fetchPatients();
+  };
+
   return (
-    <div>Patients</div>
-  )
-}
+    <div className="flex gap-4 p-4">
+      <div className="flex-1">
+        <div className="flex justify-between mb-4">
+          <h1 className="text-2xl font-bold">Patients</h1>
+          <Button onClick={() => setIsModalOpen(true)}>
+            Add Patient
+          </Button>
+        </div>
+        <PatientTable
+          patients={patients}
+          selectedPatient={selectedPatient}
+          setSelectedPatient={setSelectedPatient}
+        />
+      </div>
 
-export default page
+      {selectedPatient && (
+        <PatientDetail
+          patient={selectedPatient}
+          onDelete={handleDelete}
+          onUpdate={handleUpdate}
+          onClose={() => setSelectedPatient(null)}
+        />
+      )}
+
+      {isModalOpen && (
+        <PatientModal
+          onSubmit={handleAdd}
+          onClose={() => setIsModalOpen(false)}
+        />
+      )}
+    </div>
+  );
+}
