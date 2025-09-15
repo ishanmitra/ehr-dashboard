@@ -1,7 +1,14 @@
 "use client";
 import React from "react";
+import { Patient } from "@/types/patient";
 
-export default function PatientTable({ patients, selectedPatient, setSelectedPatient }) {
+interface PatientTableProps {
+  patients: Patient[];
+  selectedPatient: Patient | null;
+  setSelectedPatient: (patient: Patient | null) => void;
+}
+
+export default function PatientTable({ patients, selectedPatient, setSelectedPatient }: PatientTableProps) {
   return (
     <table className="w-full table-auto border-collapse">
       <thead>

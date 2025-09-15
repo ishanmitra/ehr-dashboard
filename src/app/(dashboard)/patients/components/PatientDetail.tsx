@@ -15,17 +15,12 @@ import { Calendar } from "@/components/ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { format } from "date-fns";
 
+import { Patient, PatientFormData } from "@/types/patient";
+
 interface PatientDetailProps {
-  patient: {
-    id: string | number;
-    doctor: string;
-    first_name: string;
-    last_name: string;
-    date_of_birth: string;
-    gender: string;
-  };
+  patient: Patient;
   onDelete: (id: string | number) => void;
-  onUpdate: (id: string | number, updatedPatient: any) => void;
+  onUpdate: (id: string | number, updatedPatient: PatientFormData) => void;
   onClose: () => void;
 }
 
@@ -146,7 +141,7 @@ export default function PatientDetail({
           <Label>Gender</Label>
           <Select
             value={editablePatient.gender}
-            onValueChange={(value) =>
+            onValueChange={(value: Patient['gender']) =>
               setEditablePatient({ ...editablePatient, gender: value })
             }
           >
@@ -154,9 +149,9 @@ export default function PatientDetail({
               <SelectValue placeholder="Select Gender" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="Male">Male</SelectItem>
-              <SelectItem value="Female">Female</SelectItem>
-              <SelectItem value="Do Not Specify">Do Not Specify</SelectItem>
+              <SelectItem value="Male" key="male">Male</SelectItem>
+              <SelectItem value="Female" key="female">Female</SelectItem>
+              <SelectItem value="Do Not Specify" key="not-specified">Do Not Specify</SelectItem>
             </SelectContent>
           </Select>
         </div>

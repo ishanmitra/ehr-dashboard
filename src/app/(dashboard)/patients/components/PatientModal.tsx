@@ -22,30 +22,22 @@ import { Calendar } from "@/components/ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { format } from "date-fns";
 
+import { PatientFormData } from "@/types/patient";
+
 interface PatientModalProps {
-  onSubmit: (data: {
-    doctor: string;
-    first_name: string;
-    last_name: string;
-    date_of_birth: string | null;
-    gender: string;
-  }) => void;
+  onSubmit: (data: PatientFormData) => void;
   onClose: () => void;
 }
 
 export default function PatientModal({ onSubmit, onClose }: PatientModalProps) {
-  const [formData, setFormData] = useState<{
-    doctor: string;
-    first_name: string;
-    last_name: string;
+  const [formData, setFormData] = useState<Omit<PatientFormData, 'date_of_birth'> & {
     date_of_birth: Date | null;
-    gender: string;
   }>({
     doctor: "",
     first_name: "",
     last_name: "",
     date_of_birth: null,
-    gender: "",
+    gender: "Male" as const,
   });
 
   const handleSubmit = () => {
@@ -143,7 +135,7 @@ export default function PatientModal({ onSubmit, onClose }: PatientModalProps) {
             <Label htmlFor="gender">Gender</Label>
             <Select
               value={formData.gender}
-              onValueChange={(value) => setFormData({ ...formData, gender: value })}
+              onValueChange={(value: PatientFormData['gender']) => setFormData({ ...formData, gender: value })}
             >
               <SelectTrigger>
                 <SelectValue placeholder="Select Gender" />
