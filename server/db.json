@@ -647,5 +647,52 @@
       "abnormal_status": "HH",
       "id": 5
     }
+  ],
+  "lab_orders": [
+    {
+      "doctor": 5,
+      "patient": 5,
+      "sublab": 4,
+      "accession_number": "ACC980424",
+      "priority": "S",
+      "status": "S",
+      "id": 1
+    },
+    {
+      "doctor": 10,
+      "patient": 12,
+      "sublab": 2,
+      "accession_number": "ACC141749",
+      "priority": "N",
+      "status": "A",
+      "id": 2
+    },
+    {
+      "doctor": 3,
+      "patient": 14,
+      "sublab": 3,
+      "accession_number": "ACC991195",
+      "priority": "N",
+      "status": "S",
+      "id": 3
+    },
+    {
+      "doctor": 3,
+      "patient": 3,
+      "sublab": 3,
+      "accession_number": "ACC596459",
+      "priority": "N",
+      "status": "R",
+      "id": 4
+    },
+    {
+      "doctor": 10,
+      "patient": 8,
+      "sublab": 3,
+      "accession_number": "ACC165216",
+      "priority": "N",
+      "status": "S",
+      "id": 5
+    }
   ]
 }
