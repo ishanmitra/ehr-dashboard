@@ -426,5 +426,87 @@
       "scheduled_time": "2025-10-01 10:51",
       "id": 7
     }
+  ],
+  "appointment_profiles": [
+    {
+      "doctor": "9",
+      "color": "green",
+      "name": "New Patient Visit",
+      "online_scheduling": "false",
+      "duration": "45",
+      "id": 1
+    },
+    {
+      "doctor": "3",
+      "color": "green",
+      "name": "Routine Lab Visit",
+      "online_scheduling": "false",
+      "duration": "30",
+      "id": 2
+    },
+    {
+      "doctor": "7",
+      "color": "blue",
+      "name": "Annual Checkup",
+      "online_scheduling": "true",
+      "duration": "45",
+      "id": 3
+    },
+    {
+      "doctor": "2",
+      "color": "yellow",
+      "name": "Routine Lab Visit",
+      "online_scheduling": "true",
+      "duration": "60",
+      "id": 4
+    },
+    {
+      "doctor": "5",
+      "color": "yellow",
+      "name": "Follow-up",
+      "online_scheduling": "true",
+      "duration": "30",
+      "id": 5
+    },
+    {
+      "doctor": "4",
+      "color": "purple",
+      "name": "Annual Checkup",
+      "online_scheduling": "false",
+      "duration": "45",
+      "id": 6
+    },
+    {
+      "doctor": "10",
+      "color": "green",
+      "name": "New Patient Visit",
+      "online_scheduling": "true",
+      "duration": "60",
+      "id": 7
+    },
+    {
+      "doctor": "8",
+      "color": "purple",
+      "name": "Routine Lab Visit",
+      "online_scheduling": "true",
+      "duration": "45",
+      "id": 8
+    },
+    {
+      "doctor": "1",
+      "color": "blue",
+      "name": "Annual Checkup",
+      "online_scheduling": "true",
+      "duration": "15",
+      "id": 9
+    },
+    {
+      "doctor": "6",
+      "color": "yellow",
+      "name": "Follow-up",
+      "online_scheduling": "false",
+      "duration": "30",
+      "id": 10
+    }
   ]
 }
