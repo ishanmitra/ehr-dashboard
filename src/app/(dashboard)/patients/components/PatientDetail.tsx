@@ -14,13 +14,14 @@ import {
 import { Calendar } from "@/components/ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { format } from "date-fns";
+import { toast } from "sonner";
 
 import { Patient, PatientFormData } from "@/types/patient";
 
 interface PatientDetailProps {
   patient: Patient;
-  onDelete: (id: string | number) => void;
-  onUpdate: (id: string | number, updatedPatient: PatientFormData) => void;
+  onDelete: (id: string | number) => Promise<void>;
+  onUpdate: (id: string | number, updatedPatient: PatientFormData) => Promise<void>;
   onClose: () => void;
 }
 
@@ -37,13 +38,30 @@ export default function PatientDetail({
       : null,
   });
 
-  const handleUpdate = () => {
-    onUpdate(patient.id, {
-      ...editablePatient,
-      date_of_birth: editablePatient.date_of_birth
-        ? format(editablePatient.date_of_birth, "yyyy-MM-dd")
-        : null,
-    });
+  const handleUpdate = async () => {
+    try {
+      await onUpdate(patient.id, {
+        ...editablePatient,
+        date_of_birth: editablePatient.date_of_birth
+          ? format(editablePatient.date_of_birth, "yyyy-MM-dd")
+          : null,
+      });
+      toast.success("Patient updated successfully");
+    } catch (error) {
+      console.error(error);
+      toast.error("Failed to update patient");
+    }
+  };
+
+  const handleDelete = async () => {
+    try {
+      await onDelete(patient.id);
+      toast.success("Patient deleted successfully");
+      onClose();
+    } catch (error) {
+      console.error(error);
+      toast.error("Failed to delete patient");
+    }
   };
 
   return (
@@ -141,7 +159,7 @@ export default function PatientDetail({
           <Label>Gender</Label>
           <Select
             value={editablePatient.gender}
-            onValueChange={(value: Patient['gender']) =>
+            onValueChange={(value: Patient["gender"]) =>
               setEditablePatient({ ...editablePatient, gender: value })
             }
           >
@@ -149,9 +167,15 @@ export default function PatientDetail({
               <SelectValue placeholder="Select Gender" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="Male" key="male">Male</SelectItem>
-              <SelectItem value="Female" key="female">Female</SelectItem>
-              <SelectItem value="Do Not Specify" key="not-specified">Do Not Specify</SelectItem>
+              <SelectItem value="Male" key="male">
+                Male
+              </SelectItem>
+              <SelectItem value="Female" key="female">
+                Female
+              </SelectItem>
+              <SelectItem value="Do Not Specify" key="not-specified">
+                Do Not Specify
+              </SelectItem>
             </SelectContent>
           </Select>
         </div>
@@ -159,10 +183,7 @@ export default function PatientDetail({
 
       {/* Footer */}
       <div className="flex items-center justify-between border-t p-4">
-        <Button
-          variant="destructive"
-          onClick={() => onDelete(patient.id)}
-        >
+        <Button variant="destructive" onClick={handleDelete}>
           Delete
         </Button>
         <div className="flex gap-2">

@@ -23,16 +23,17 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import { format } from "date-fns";
 
 import { PatientFormData } from "@/types/patient";
+import { toast } from "sonner";
 
 interface PatientModalProps {
-  onSubmit: (data: PatientFormData) => void;
+  onSubmit: (data: PatientFormData) => Promise<void>;
   onClose: () => void;
 }
 
 export default function PatientModal({ onSubmit, onClose }: PatientModalProps) {
-  const [formData, setFormData] = useState<Omit<PatientFormData, 'date_of_birth'> & {
-    date_of_birth: Date | null;
-  }>({
+  const [formData, setFormData] = useState<
+    Omit<PatientFormData, "date_of_birth"> & { date_of_birth: Date | null }
+  >({
     doctor: "",
     first_name: "",
     last_name: "",
@@ -40,19 +41,32 @@ export default function PatientModal({ onSubmit, onClose }: PatientModalProps) {
     gender: "Male" as const,
   });
 
-  const handleSubmit = () => {
-    if (!formData.doctor || !formData.first_name || !formData.last_name || !formData.date_of_birth || !formData.gender) {
-      alert("Please fill all mandatory fields");
+  const handleSubmit = async () => {
+    if (
+      !formData.doctor ||
+      !formData.first_name ||
+      !formData.last_name ||
+      !formData.date_of_birth ||
+      !formData.gender
+    ) {
+      toast.error("Please fill all mandatory fields");
       return;
     }
 
-    onSubmit({
-      ...formData,
-      date_of_birth: formData.date_of_birth
-        ? format(formData.date_of_birth, "yyyy-MM-dd")
-        : null,
-    });
-    onClose();
+    try {
+        await onSubmit({
+        ...formData,
+        date_of_birth: formData.date_of_birth
+            ? format(formData.date_of_birth, "yyyy-MM-dd")
+            : null,
+        });
+
+        toast.success("Patient created successfully");
+        onClose();
+    } catch (error) {
+        console.error(error);
+        toast.error("Failed to create patient");
+    }
   };
 
   return (
@@ -124,7 +138,9 @@ export default function PatientModal({ onSubmit, onClose }: PatientModalProps) {
                 <Calendar
                   mode="single"
                   selected={formData.date_of_birth || undefined}
-                  onSelect={(date) => setFormData({ ...formData, date_of_birth: date || null })}
+                  onSelect={(date) =>
+                    setFormData({ ...formData, date_of_birth: date || null })
+                  }
                 />
               </PopoverContent>
             </Popover>
@@ -135,7 +151,9 @@ export default function PatientModal({ onSubmit, onClose }: PatientModalProps) {
             <Label htmlFor="gender">Gender</Label>
             <Select
               value={formData.gender}
-              onValueChange={(value: PatientFormData['gender']) => setFormData({ ...formData, gender: value })}
+              onValueChange={(value: PatientFormData["gender"]) =>
+                setFormData({ ...formData, gender: value })
+              }
             >
               <SelectTrigger>
                 <SelectValue placeholder="Select Gender" />
