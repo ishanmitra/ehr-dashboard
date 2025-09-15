@@ -133,7 +133,6 @@ export default function PatientModal({ onSubmit, onClose }: PatientModalProps) {
                   mode="single"
                   selected={formData.date_of_birth || undefined}
                   onSelect={(date) => setFormData({ ...formData, date_of_birth: date || null })}
-                  max={new Date()}
                 />
               </PopoverContent>
             </Popover>
