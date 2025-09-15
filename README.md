@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EHR Integration Dashboard Assignment
 
-## Getting Started
+## Objective
 
-First, run the development server:
+Build a secure Next.js application that integrates an Electronic Health Records (EHR) system
+with a dashboard to perform CRUD operations. Your implementation should demonstrate
+thorough understanding of API documentations and create a practical dashboard.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Requirements
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 1. Documentation Review & Analysis
+- Choose any ONE Of the following EHRs
+  - https://open.epic.com/
+  - https://app.drchrono.com/api-docs/
+- Create a CRUD Dashboard to modify data inside the integration
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 2. Core Healthcare Workflows to Implement
+Based on available APIs, implement AS MANY of the following healthcare CRUD
+operations:
+Patient Management
+- Search and retrieve patient records by name, ID, or other identifiers
+- View complete patient information including demographics, medical history, allergies
+- Update patient contact information and basic demographics
+- Add or modify allergies and medical conditions
+- Access medication lists and immunization records
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Appointment Scheduling
+- View appointments by date, provider, or patient
+- Book new appointments with availability checking
+- Reschedule or cancel existing appointments
+- Check provider schedules and availability
+- Handle appointment conflicts and overlaps
 
-## Learn More
+### Clinical Operations
+- Add clinical notes
+- Record and update vital signs
+- View lab results and diagnostic reports
+- Access and update medication lists
+- Add diagnoses and procedure codes
+- Retrieve patient history and previous encounters
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Billing & Administrative
+- Check insurance eligibility and coverage
+- View patient balances and payment history
+- Access billing codes and fee schedules
+- Generate basic reports and analytics
