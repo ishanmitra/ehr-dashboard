@@ -697,7 +697,7 @@
   ],
   "patient_payments": [
     {
-      "doctor": 10,
+      "doctor": "10",
       "patient": 5,
       "amount": 282.25,
       "appointment": 7,
@@ -707,7 +707,7 @@
       "id": 1
     },
     {
-      "doctor": 10,
+      "doctor": "10",
       "patient": 14,
       "amount": 380.88,
       "appointment": 1,
@@ -717,7 +717,7 @@
       "id": 2
     },
     {
-      "doctor": 10,
+      "doctor": "10",
       "patient": 13,
       "amount": 438.14,
       "appointment": 6,
@@ -727,7 +727,7 @@
       "id": 3
     },
     {
-      "doctor": 5,
+      "doctor": "5",
       "patient": 1,
       "amount": 492.71,
       "appointment": 10,
@@ -737,7 +737,7 @@
       "id": 4
     },
     {
-      "doctor": 5,
+      "doctor": "5",
       "patient": 4,
       "amount": 472.33,
       "appointment": 5,
