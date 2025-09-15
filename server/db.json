@@ -1,0 +1,164 @@
+{
+  "patients": [
+    {
+      "doctor": "10",
+      "first_name": "James",
+      "last_name": "Smith",
+      "date_of_birth": "1997-11-23",
+      "gender": "Male",
+      "id": 1
+    },
+    {
+      "doctor": "9",
+      "first_name": "Michael",
+      "last_name": "Brown",
+      "date_of_birth": "1955-03-03",
+      "gender": "Male",
+      "id": 2
+    },
+    {
+      "doctor": "1",
+      "first_name": "Robert",
+      "last_name": "Williams",
+      "date_of_birth": "1972-11-18",
+      "gender": "Male",
+      "id": 3
+    },
+    {
+      "doctor": "2",
+      "first_name": "Mary",
+      "last_name": "Williams",
+      "date_of_birth": "2009-03-14",
+      "gender": "Female",
+      "id": 4
+    },
+    {
+      "doctor": "8",
+      "first_name": "James",
+      "last_name": "Jones",
+      "date_of_birth": "1943-03-22",
+      "gender": "Male",
+      "id": 5
+    },
+    {
+      "doctor": "6",
+      "first_name": "Jennifer",
+      "last_name": "Williams",
+      "date_of_birth": "1986-06-28",
+      "gender": "Female",
+      "id": 6
+    },
+    {
+      "doctor": "7",
+      "first_name": "Michael",
+      "last_name": "Williams",
+      "date_of_birth": "1994-08-08",
+      "gender": "Male",
+      "id": 7
+    },
+    {
+      "doctor": "8",
+      "first_name": "James",
+      "last_name": "Jones",
+      "date_of_birth": "1957-09-16",
+      "gender": "Male",
+      "id": 8
+    },
+    {
+      "doctor": "9",
+      "first_name": "Elizabeth",
+      "last_name": "Williams",
+      "date_of_birth": "1972-01-11",
+      "gender": "Female",
+      "id": 9
+    },
+    {
+      "doctor": "1",
+      "first_name": "Jennifer",
+      "last_name": "Johnson",
+      "date_of_birth": "1951-08-02",
+      "gender": "Female",
+      "id": 10
+    },
+    {
+      "doctor": "4",
+      "first_name": "Jennifer",
+      "last_name": "Brown",
+      "date_of_birth": "1985-03-23",
+      "gender": "Female",
+      "id": 11
+    },
+    {
+      "doctor": "3",
+      "first_name": "Jennifer",
+      "last_name": "Williams",
+      "date_of_birth": "1988-12-22",
+      "gender": "Female",
+      "id": 12
+    },
+    {
+      "doctor": "3",
+      "first_name": "Patricia",
+      "last_name": "Smith",
+      "date_of_birth": "1965-12-21",
+      "gender": "Female",
+      "id": 13
+    },
+    {
+      "doctor": "9",
+      "first_name": "Patricia",
+      "last_name": "Brown",
+      "date_of_birth": "2009-12-18",
+      "gender": "Female",
+      "id": 14
+    },
+    {
+      "doctor": "10",
+      "first_name": "Elizabeth",
+      "last_name": "Brown",
+      "date_of_birth": "1991-09-26",
+      "gender": "Female",
+      "id": 15
+    },
+    {
+      "doctor": "3",
+      "first_name": "Patricia",
+      "last_name": "Johnson",
+      "date_of_birth": "1961-05-15",
+      "gender": "Female",
+      "id": 16
+    },
+    {
+      "doctor": "7",
+      "first_name": "Robert",
+      "last_name": "Smith",
+      "date_of_birth": "1950-03-05",
+      "gender": "Male",
+      "id": 17
+    },
+    {
+      "doctor": "10",
+      "first_name": "David",
+      "last_name": "Johnson",
+      "date_of_birth": "1941-03-24",
+      "gender": "Male",
+      "id": 18
+    },
+    {
+      "doctor": "3",
+      "first_name": "James",
+      "last_name": "Johnson",
+      "date_of_birth": "1987-07-20",
+      "gender": "Male",
+      "id": 19
+    },
+    {
+      "doctor": "7",
+      "first_name": "Jennifer",
+      "last_name": "Brown",
+      "date_of_birth": "1960-11-13",
+      "gender": "Female",
+      "id": 20
+    }
+  ]
+}
