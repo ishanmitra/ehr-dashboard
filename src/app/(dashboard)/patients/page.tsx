@@ -55,6 +55,7 @@ export default function PatientsPage() {
 
       {selectedPatient && (
         <PatientDetail
+          key={selectedPatient.id}
           patient={selectedPatient}
           onDelete={handleDelete}
           onUpdate={handleUpdate}
