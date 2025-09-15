@@ -316,5 +316,57 @@
       "pharmacy_note": "",
       "id": 5
     }
+  ],
+  "patient_vaccine_records": [
+    {
+      "cvx_code": "21",
+      "name": "Varicella",
+      "doctor": 6,
+      "patient": 2,
+      "administered_at": 2,
+      "administered_by": 6,
+      "completion_status": "CP",
+      "id": 1
+    },
+    {
+      "cvx_code": "207",
+      "name": "Hepatitis B, adolescent or adult",
+      "doctor": 6,
+      "patient": 6,
+      "administered_at": 3,
+      "administered_by": 6,
+      "completion_status": "CP",
+      "id": 2
+    },
+    {
+      "cvx_code": "207",
+      "name": "Hepatitis B, adolescent or adult",
+      "doctor": 9,
+      "patient": 19,
+      "administered_at": 4,
+      "administered_by": 9,
+      "completion_status": "CP",
+      "id": 3
+    },
+    {
+      "cvx_code": "21",
+      "name": "Varicella",
+      "doctor": 9,
+      "patient": 16,
+      "administered_at": 1,
+      "administered_by": 9,
+      "completion_status": "CP",
+      "id": 4
+    },
+    {
+      "cvx_code": "10",
+      "name": "BCG",
+      "doctor": 9,
+      "patient": 19,
+      "administered_at": 2,
+      "administered_by": 9,
+      "completion_status": "CP",
+      "id": 5
+    }
   ]
 }
