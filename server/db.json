@@ -206,8 +206,8 @@
       "problem_type": "sdoh",
       "name": "Asthma",
       "description": "Patient has asthma",
-      "date_onset": "2025-05-23T07:57:50.139Z",
-      "date_diagnosis": "2023-06-05T00:35:40.935Z",
+      "date_onset": "2025-05-23",
+      "date_diagnosis": "2023-06-05",
       "id": 1
     },
     {
@@ -217,8 +217,8 @@
       "problem_type": "disability status",
       "name": "Allergy",
       "description": "Patient has allergy",
-      "date_onset": "2017-07-31T22:54:05.515Z",
-      "date_diagnosis": "2024-07-24T07:09:12.693Z",
+      "date_onset": "2017-07-31",
+      "date_diagnosis": "2024-07-24",
       "id": 2
     },
     {
@@ -228,8 +228,8 @@
       "problem_type": "disability status",
       "name": "Asthma",
       "description": "Patient has asthma",
-      "date_onset": "2017-09-29T20:33:51.214Z",
-      "date_diagnosis": "2025-09-10T18:31:55.408Z",
+      "date_onset": "2017-09-29",
+      "date_diagnosis": "2025-09-10",
       "id": 3
     },
     {
@@ -239,8 +239,8 @@
       "problem_type": "functional status",
       "name": "Back Pain",
       "description": "Patient has back pain",
-      "date_onset": "2018-09-22T20:33:41.636Z",
-      "date_diagnosis": "2021-06-21T00:24:13.430Z",
+      "date_onset": "2018-09-22",
+      "date_diagnosis": "2021-06-21",
       "id": 4
     },
     {
@@ -250,8 +250,70 @@
       "problem_type": "functional status",
       "name": "Diabetes",
       "description": "Patient has diabetes",
-      "date_onset": "2019-09-07T05:09:28.784Z",
-      "date_diagnosis": "2023-11-16T12:39:43.984Z",
+      "date_onset": "2019-09-07",
+      "date_diagnosis": "2023-11-16",
+      "id": 5
+    }
+  ],
+  "medications": [
+    {
+      "doctor": "2",
+      "patient": "7",
+      "name": "Metformin",
+      "dosage_quantity": "100",
+      "dosage_units": "mg",
+      "date_prescribed": "2015-01-03",
+      "date_started_taking": "2024-11-21",
+      "date_stopped_taking": "2015-09-19",
+      "pharmacy_note": "",
+      "id": 1
+    },
+    {
+      "doctor": "3",
+      "patient": "15",
+      "name": "Albuterol",
+      "dosage_quantity": "3",
+      "dosage_units": "puff",
+      "date_prescribed": "2017-11-02",
+      "date_started_taking": "2020-03-11",
+      "date_stopped_taking": "2023-09-23",
+      "pharmacy_note": "",
+      "id": 2
+    },
+    {
+      "doctor": "10",
+      "patient": "2",
+      "name": "Ibuprofen",
+      "dosage_quantity": "10",
+      "dosage_units": "mg",
+      "date_prescribed": "2018-10-26",
+      "date_started_taking": "2022-09-06",
+      "date_stopped_taking": "2018-01-09",
+      "pharmacy_note": "",
+      "id": 3
+    },
+    {
+      "doctor": "9",
+      "patient": "6",
+      "name": "Albuterol",
+      "dosage_quantity": "3",
+      "dosage_units": "puff",
+      "date_prescribed": "2017-11-25",
+      "date_started_taking": "2017-10-21",
+      "date_stopped_taking": "2016-04-03",
+      "pharmacy_note": "",
+      "id": 4
+    },
+    {
+      "doctor": "3",
+      "patient": "3",
+      "name": "Albuterol",
+      "dosage_quantity": "3",
+      "dosage_units": "puff",
+      "date_prescribed": "2021-05-06",
+      "date_started_taking": "2019-06-15",
+      "date_stopped_taking": "2021-09-30",
+      "pharmacy_note": "",
       "id": 5
     }
   ]
