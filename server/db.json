@@ -160,5 +160,42 @@
       "gender": "Female",
       "id": 20
     }
+  ],
+  "allergies": [
+    {
+      "doctor": 1,
+      "patient": 8,
+      "reaction": "Acute kidney injury",
+      "snomed_reaction": "14669001",
+      "id": 1
+    },
+    {
+      "doctor": 5,
+      "patient": 1,
+      "reaction": "Joint pain",
+      "snomed_reaction": "57676002",
+      "id": 2
+    },
+    {
+      "doctor": 9,
+      "patient": 2,
+      "reaction": "Anaphylaxis",
+      "snomed_reaction": "39579001",
+      "id": 3
+    },
+    {
+      "doctor": 4,
+      "patient": 6,
+      "reaction": "Joint pain",
+      "snomed_reaction": "57676002",
+      "id": 4
+    },
+    {
+      "doctor": 10,
+      "patient": 14,
+      "reaction": "Pain in throat",
+      "snomed_reaction": "162397003",
+      "id": 5
+    }
   ]
 }
