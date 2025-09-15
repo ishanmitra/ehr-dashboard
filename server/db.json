@@ -694,5 +694,57 @@
       "status": "S",
       "id": 5
     }
+  ],
+  "patient_payments": [
+    {
+      "doctor": 10,
+      "patient": 5,
+      "amount": 282.25,
+      "appointment": 7,
+      "line_item": 5,
+      "payment_method": "CRDT",
+      "payment_transaction_type": "COPAY",
+      "id": 1
+    },
+    {
+      "doctor": 10,
+      "patient": 14,
+      "amount": 380.88,
+      "appointment": 1,
+      "line_item": 2,
+      "payment_method": "CRDT",
+      "payment_transaction_type": "COR",
+      "id": 2
+    },
+    {
+      "doctor": 10,
+      "patient": 13,
+      "amount": 438.14,
+      "appointment": 6,
+      "line_item": 9,
+      "payment_method": "VISA",
+      "payment_transaction_type": "",
+      "id": 3
+    },
+    {
+      "doctor": 5,
+      "patient": 1,
+      "amount": 492.71,
+      "appointment": 10,
+      "line_item": 4,
+      "payment_method": "CRDT",
+      "payment_transaction_type": "OTHR",
+      "id": 4
+    },
+    {
+      "doctor": 5,
+      "patient": 4,
+      "amount": 472.33,
+      "appointment": 5,
+      "line_item": 3,
+      "payment_method": "AMEX",
+      "payment_transaction_type": "COINSR",
+      "id": 5
+    }
   ]
 }
