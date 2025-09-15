@@ -197,5 +197,62 @@
       "snomed_reaction": "162397003",
       "id": 5
     }
+  ],
+  "problems": [
+    {
+      "doctor": 1,
+      "patient": 14,
+      "category": "problem-list-item",
+      "problem_type": "sdoh",
+      "name": "Asthma",
+      "description": "Patient has asthma",
+      "date_onset": "2025-05-23T07:57:50.139Z",
+      "date_diagnosis": "2023-06-05T00:35:40.935Z",
+      "id": 1
+    },
+    {
+      "doctor": 9,
+      "patient": 4,
+      "category": "health-concern",
+      "problem_type": "disability status",
+      "name": "Allergy",
+      "description": "Patient has allergy",
+      "date_onset": "2017-07-31T22:54:05.515Z",
+      "date_diagnosis": "2024-07-24T07:09:12.693Z",
+      "id": 2
+    },
+    {
+      "doctor": 8,
+      "patient": 19,
+      "category": "problem-list-item",
+      "problem_type": "disability status",
+      "name": "Asthma",
+      "description": "Patient has asthma",
+      "date_onset": "2017-09-29T20:33:51.214Z",
+      "date_diagnosis": "2025-09-10T18:31:55.408Z",
+      "id": 3
+    },
+    {
+      "doctor": 4,
+      "patient": 17,
+      "category": "health-concern",
+      "problem_type": "functional status",
+      "name": "Back Pain",
+      "description": "Patient has back pain",
+      "date_onset": "2018-09-22T20:33:41.636Z",
+      "date_diagnosis": "2021-06-21T00:24:13.430Z",
+      "id": 4
+    },
+    {
+      "doctor": 2,
+      "patient": 15,
+      "category": "problem-list-item",
+      "problem_type": "functional status",
+      "name": "Diabetes",
+      "description": "Patient has diabetes",
+      "date_onset": "2019-09-07T05:09:28.784Z",
+      "date_diagnosis": "2023-11-16T12:39:43.984Z",
+      "id": 5
+    }
   ]
 }
