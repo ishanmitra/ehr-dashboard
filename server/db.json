@@ -590,5 +590,62 @@
       "scheduled_time": "2025-09-28 15:41",
       "id": 10
     }
+  ],
+  "lab_results": [
+    {
+      "doctor_id": 2,
+      "lab_order_id": 20,
+      "document": 3,
+      "lab_test": 6,
+      "status": "I",
+      "test_performed": "Test 5",
+      "value": "25.75",
+      "abnormal_status": "R",
+      "id": 1
+    },
+    {
+      "doctor_id": 9,
+      "lab_order_id": 2,
+      "document": 9,
+      "lab_test": 3,
+      "status": "F",
+      "test_performed": "Test 8",
+      "value": "47.05",
+      "abnormal_status": "I",
+      "id": 2
+    },
+    {
+      "doctor_id": 5,
+      "lab_order_id": 2,
+      "document": 8,
+      "lab_test": 17,
+      "status": "I",
+      "test_performed": "Test 9",
+      "value": "60.71",
+      "abnormal_status": "S",
+      "id": 3
+    },
+    {
+      "doctor_id": 9,
+      "lab_order_id": 19,
+      "document": 10,
+      "lab_test": 8,
+      "status": "P",
+      "test_performed": "Test 6",
+      "value": "76.68",
+      "abnormal_status": "LL",
+      "id": 4
+    },
+    {
+      "doctor_id": 10,
+      "lab_order_id": 8,
+      "document": 3,
+      "lab_test": 16,
+      "status": "P",
+      "test_performed": "Test 2",
+      "value": "38.40",
+      "abnormal_status": "HH",
+      "id": 5
+    }
   ]
 }
